@@ -17,6 +17,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,6 +36,7 @@ a {
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
   padding: 15px;
+  box-shadow: 1px 1px 5px #000;
 }
 
 /* =================== FirstSection (as header) =================== */
@@ -80,6 +82,7 @@ a {
   padding-bottom: 40px;
   margin-top: 50px;
   font-size: 1rem;
+  box-shadow: 0 0 10px #000;
 }
 
 .projects-container {
@@ -141,6 +144,7 @@ a {
   margin-top: 100px;
   margin-bottom: 100px;
   font-size: 1rem;
+  box-shadow: 0 0 10px #000;
 }
 
 .contact h1 {
@@ -162,6 +166,10 @@ a {
 .contact svg {
   width: 45px;
   height: 45px;
+}
+
+.contact svg:hover {
+  fill: rgb(9, 9, 187);
 }
 
 .contact p {
