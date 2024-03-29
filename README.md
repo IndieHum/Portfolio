@@ -1,1 +1,1 @@
-This file contain my portfolio websites codes, see my handwriting in programming :)
+This file contains my portfolio website codes, see my handwriting in programming.
