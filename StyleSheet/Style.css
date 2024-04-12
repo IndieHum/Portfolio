@@ -1,271 +1,58 @@
-﻿/* =================== General-Style =================== */
-
-@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Vazirmatn&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding: 1.3rem;
-}
+﻿/* GENERAL */
 
 body {
-  font-family: "Vazirmatn", sans-serif;
-  overflow-x: hidden;
-  background-image: url("../Img/Background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgb(26, 26, 26);
+  font-family: "iraniansans";
+}
+
+p {
+  color: rgb(0, 158, 0);
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
-  color: black;
 }
 
-.card {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  padding: 15px;
-  box-shadow: 1px 1px 5px #000;
-}
+/* BODY => HEADER */
 
-/* =================== FirstSection (as header) =================== */
-
-.introduce {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.introduce span {
-  font-size: 7rem;
-  font-weight: bold;
-}
-
-.introduce-btn {
-  margin-top: 25px;
-  font-size: 1.3rem;
-  font-weight: 550;
-}
-
-.button {
-  margin-left: 10px;
-}
-
-.button:hover {
-  padding: 17px;
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-}
-
-/* =================== SecondSection (as main) =================== */
-
-.projects {
-  width: 1200px;
-  background-color: #eeeeea;
-  border-radius: 10px;
-  padding: 10px;
-  padding-bottom: 40px;
+header {
   margin-top: 50px;
-  font-size: 1rem;
-  box-shadow: 0 0 10px #000;
 }
 
-.projects-container {
+header img {
+  width: 175px;
+}
+
+.tech-contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BODY => MAIN */
+
+.link-contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+main img {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* BODY => FOOTER */
+
+footer img {
+  width: 100px;
+}
+
+.social-contain {
   width: 100%;
-  margin-top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.projects-container span {
-  background-color: white;
-  margin-bottom: 45px;
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px black;
-}
-
-.sample {
-  width: 350px;
-  height: 350px;
-  display: flex;
-  align-items: flex-end;
   justify-content: center;
-  border-radius: 15px;
-  box-shadow: 1px 1px 4px black;
-  animation: ScaleIn 0.5s;
-}
-
-.sample:hover {
-  animation: ScaleOut 1s forwards;
-}
-
-.proj-zarin {
-  background: url(../Img/proj-1.png) no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.proj-portfolio {
-  background: url(../Img/proj-2.png) no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.proj-abst {
-  background: url(../Img/proj-3.png) no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* =================== ThirdSection (as footer) =================== */
-
-.contact {
-  width: 1200px;
-  background-color: #eeeeea;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-size: 1rem;
-  box-shadow: 0 0 10px #000;
-}
-
-.contact h1 {
-  margin-bottom: 30px;
-}
-
-.contact div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.contact a {
-  width: 45px;
-  height: 45px;
-  margin-left: 25px;
-}
-
-.contact svg {
-  width: 45px;
-  height: 45px;
-}
-
-.contact svg:hover {
-  fill: rgb(9, 9, 187);
-}
-
-.contact p {
-  font-size: 1.2rem;
-}
-
-/* =================== Animation =================== */
-
-@keyframes ScaleOut {
-  0% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(1.05, 1.05);
-  }
-}
-
-@keyframes ScaleIn {
-  0% {
-    transform: scale(1.05, 1.05);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-/* =================== Meta Tags & Responsive =================== */
-
-@media (max-width: 1210px) {
-  .projects {
-    width: 768px;
-  }
-  .sample {
-    width: 200px;
-    height: 200px;
-  }
-  .contact {
-    width: 768px;
-  }
-}
-
-@media (max-width: 770px) {
-  .introduce span {
-    font-size: 4rem;
-  }
-  .projects {
-    width: 550px;
-  }
-  .projects-container span {
-    display: none;
-  }
-  .sample {
-    width: 150px;
-    height: 150px;
-  }
-  .contact {
-    width: 550px;
-  }
-  .contact p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .introduce span {
-    font-size: 2.8rem;
-  }
-  .introduce-btn {
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-  .projects {
-    width: 300px;
-  }
-  .projects h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-direction: column;
-  }
-  .contact {
-    width: 300px;
-  }
-  .contact h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .contact p {
-    display: none;
-  }
-  .contact section {
-    display: flex;
-  }
 }
