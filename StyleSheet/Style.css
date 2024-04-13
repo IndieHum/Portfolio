@@ -31,6 +31,32 @@ header img {
   justify-content: space-between;
 }
 
+u {
+  cursor: help;
+}
+
+.info-card {
+  display: none;
+  height: auto;
+  width: 275px;
+  position: absolute;
+  right: 350px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #eeeeef;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.info-card p {
+  color: black;
+  font-size: 1.1rem;
+}
+
 /* BODY => MAIN */
 
 .link-contain {
