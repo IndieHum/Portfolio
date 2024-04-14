@@ -7,6 +7,10 @@ body {
   font-family: "iraniansans";
 }
 
+.fade {
+  opacity: 0;
+}
+
 p {
   color: rgb(0, 158, 0);
   font-size: 1.5rem;
@@ -48,10 +52,6 @@ u {
   transition: 0.3s ease-in-out;
 }
 
-.fade {
-  opacity: 0;
-}
-
 .info-card p {
   color: black;
   font-size: 1.1rem;
@@ -69,6 +69,23 @@ main img {
   height: 165px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.git-card {
+  display: none;
+  position: absolute;
+  bottom: 175px;
+  left: 165px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #eeeeef;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.git-card p {
+  color: black;
+  font-size: 1.1rem;
 }
 
 /* BODY => FOOTER */

@@ -1,5 +1,7 @@
 const MeTag = document.getElementById("me");
 const MeInfoCard = document.querySelector(".info-card");
+const GitRepo = document.getElementById("git-repo");
+const GitCard = document.querySelector(".git-card");
 
 MeTag.addEventListener("mouseenter", function () {
   MeInfoCard.style.display = "block";
@@ -7,4 +9,18 @@ MeTag.addEventListener("mouseenter", function () {
 });
 MeTag.addEventListener("mouseleave", function () {
   MeInfoCard.classList.toggle("fade");
+  setTimeout(() => {
+    MeInfoCard.style.display = "none";
+  }, 1000);
+});
+
+GitRepo.addEventListener("mouseenter", function () {
+  GitCard.style.display = "block";
+  GitCard.classList.toggle("fade");
+});
+GitRepo.addEventListener("mouseleave", function () {
+  GitCard.classList.toggle("fade");
+  setTimeout(() => {
+    GitCard.style.display = "none";
+  }, 1000);
 });
