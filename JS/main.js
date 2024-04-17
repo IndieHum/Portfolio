@@ -11,7 +11,7 @@ MeTag.addEventListener("mouseleave", function () {
   MeInfoCard.classList.toggle("fade");
   setTimeout(() => {
     MeInfoCard.style.display = "none";
-  }, 1000);
+  }, 300);
 });
 
 GitRepo.addEventListener("mouseenter", function () {
@@ -22,5 +22,5 @@ GitRepo.addEventListener("mouseleave", function () {
   GitCard.classList.toggle("fade");
   setTimeout(() => {
     GitCard.style.display = "none";
-  }, 1000);
+  }, 300);
 });
