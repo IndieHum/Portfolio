@@ -117,6 +117,13 @@ footer img {
   main {
     margin-bottom: 50px;
   }
+  .info-card {
+    right: 250px;
+  }
+  .git-card {
+    left: 35px;
+    bottom: 135px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -134,5 +141,13 @@ footer img {
   main img {
     width: 65px;
     height: 65px;
+  }
+  .info-card {
+    right: 50px;
+  }
+  .git-card {
+    width: 150px;
+    left: 20px;
+    bottom: 185px;
   }
 }
