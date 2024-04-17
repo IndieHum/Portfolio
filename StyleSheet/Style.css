@@ -99,3 +99,40 @@ footer img {
   display: flex;
   justify-content: center;
 }
+
+/* RESPONSIVE SECTION */
+
+@media (max-width: 1000px) {
+  body {
+    max-width: 600px;
+  }
+  header img {
+    width: 125px;
+  }
+  main img {
+    width: 115px;
+    height: 115px;
+  }
+  header,
+  main {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 275px;
+    padding-top: 65px;
+  }
+  p {
+    font-size: 1.05rem;
+    font-weight: bold;
+  }
+  header img {
+    width: 65px;
+  }
+  main img {
+    width: 65px;
+    height: 65px;
+  }
+}
