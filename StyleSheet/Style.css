@@ -42,10 +42,6 @@ a {
 
 /* BODY => HEADER */
 
-header {
-    margin-top: 50px;
-}
-
 .tech-contain {
     display: flex;
     justify-content: space-between;
