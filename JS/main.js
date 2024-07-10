@@ -1,26 +1,35 @@
-const MeTag = document.getElementById("me");
-const MeInfoCard = document.querySelector(".info-card");
-const GitRepo = document.getElementById("git-repo");
-const GitCard = document.querySelector(".git-card");
+const DatePanel = document.getElementById("date");
+const SelectOption = document.querySelector("select");
+const Container = document.querySelector(".link-contain");
+const today = Date.now();
 
-MeTag.addEventListener("mouseenter", function () {
-    MeInfoCard.style.display = "block";
-    MeInfoCard.classList.toggle("fade");
-});
-MeTag.addEventListener("mouseleave", function () {
-    MeInfoCard.classList.toggle("fade");
-    setTimeout(() => {
-        MeInfoCard.style.display = "none";
-    }, 300);
+const todayFa = {
+    day: getDateFormat(today, { day: "2-digit" }),
+    month: getDateFormat(today, { month: "numeric" }),
+    monthTitle: getDateFormat(today, { month: "long" }),
+    year: getDateFormat(today, { year: "numeric" }),
+    dayWeek: getDateFormat(today, { weekday: "long" }),
+};
+
+function getDateFormat(uDate, option) {
+    let date = new Intl.DateTimeFormat("fa-IR", option).format(uDate);
+    return date;
+}
+
+//adding date to span element in footer
+document.addEventListener("DOMContentLoaded", () => {
+    const { year, monthTitle, dayWeek, day } = todayFa;
+    DatePanel.innerText = `${dayWeek} ${day} ${monthTitle} ${year}`;
 });
 
-GitRepo.addEventListener("mouseenter", function () {
-    GitCard.style.display = "block";
-    GitCard.classList.toggle("fade");
-});
-GitRepo.addEventListener("mouseleave", function () {
-    GitCard.classList.toggle("fade");
-    setTimeout(() => {
-        GitCard.style.display = "none";
-    }, 300);
+SelectOption.addEventListener("change", () => {
+    const SelectValue = SelectOption.value;
+    switch (SelectValue) {
+        case "newest":
+            Container.style.flexWrap = "wrap";
+            break;
+        case "oldest":
+            Container.style.flexWrap = "wrap-reverse";
+            break;
+    }
 });
