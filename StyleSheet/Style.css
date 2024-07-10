@@ -21,6 +21,7 @@
 body {
     max-width: 1000px;
     margin: auto;
+    padding: 50px;
     background-color: rgb(26, 26, 26);
 }
 
@@ -114,4 +115,29 @@ footer span {
 footer a:hover {
     text-decoration: underline;
     font-size: 1.25rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .sample {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 15px;
+    }
+    p {
+        font-size: medium;
+    }
+    header .tech-contain img {
+        width: 75px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
