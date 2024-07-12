@@ -1,3 +1,6 @@
+import { FetchSamples } from "./httpReq.js";
+import { RenderData } from "./Render.js";
+
 const DatePanel = document.getElementById("date");
 const SelectOption = document.querySelector("select");
 const Container = document.querySelector(".link-contain");
@@ -26,10 +29,19 @@ SelectOption.addEventListener("change", () => {
     const SelectValue = SelectOption.value;
     switch (SelectValue) {
         case "newest":
-            Container.style.flexWrap = "wrap";
+            Container.style.flexWrap = "wrap-reverse";
             break;
         case "oldest":
-            Container.style.flexWrap = "wrap-reverse";
+            Container.style.flexWrap = "wrap";
             break;
     }
 });
+
+//fetching my samples
+async function FetchData() {
+    const Data = await FetchSamples();
+    console.log(Data);
+    RenderData(Data, Container);
+}
+
+document.addEventListener("DOMContentLoaded", FetchData);

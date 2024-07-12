@@ -67,12 +67,9 @@ main section select {
 .link-contain {
     margin: 25px auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
     justify-content: space-evenly;
     gap: 20px;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between; */
 }
 
 .sample {
