@@ -110,6 +110,16 @@ footer a:hover {
     font-size: 1.25rem;
 }
 
+/* FILTER PROJECT */
+
+main:has(option[value="newest"]:checked) .link-contain {
+    flex-wrap: wrap-reverse;
+}
+
+main:has(option[value="oldest"]:checked) .link-contain {
+    flex-wrap: wrap;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {

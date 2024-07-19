@@ -2,7 +2,6 @@ import { FetchSamples } from "./httpReq.js";
 import { RenderData } from "./Render.js";
 
 const DatePanel = document.getElementById("date");
-const SelectOption = document.querySelector("select");
 const Container = document.querySelector(".link-contain");
 const today = Date.now();
 
@@ -23,18 +22,6 @@ function getDateFormat(uDate, option) {
 document.addEventListener("DOMContentLoaded", () => {
     const { year, monthTitle, dayWeek, day } = todayFa;
     DatePanel.innerText = `${dayWeek} ${day} ${monthTitle} ${year}`;
-});
-
-SelectOption.addEventListener("change", () => {
-    const SelectValue = SelectOption.value;
-    switch (SelectValue) {
-        case "newest":
-            Container.style.flexWrap = "wrap-reverse";
-            break;
-        case "oldest":
-            Container.style.flexWrap = "wrap";
-            break;
-    }
 });
 
 //fetching my samples
