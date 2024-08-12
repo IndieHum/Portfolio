@@ -54,9 +54,10 @@ header .tech-contain img {
 
 /* BODY => MAIN */
 
-main section:first-child {
+main section:has(select) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main section select {
