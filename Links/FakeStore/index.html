@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Fake Store</title>
+    </head>
+    <body>
+        <header>
+            <h3>Fake Store</h3>
+            <div>
+                <a href="auth.html" id="login"
+                    >Login <i class="fa-solid fa-right-to-bracket"></i
+                ></a>
+                <a href="dashboard.html" id="dashboard"
+                    >Dashboard <i class="fa-solid fa-house"></i
+                ></a>
+            </div>
+        </header>
+
+        <div id="search">
+            <h1>Shop</h1>
+            <input type="text" placeholder="Search Here..." />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="container">
+            <div id="products">
+                <span id="loader"></span>
+            </div>
+            <div id="filter">
+                <div>
+                    <i class="fa-solid fa-sliders"></i>
+                    <p>Category</p>
+                </div>
+                <ul>
+                    <li class="selected">All</li>
+                    <li>Electronics</li>
+                    <li>jewelery</li>
+                    <li>Men's Clothing</li>
+                    <li>Women's Clothing</li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
