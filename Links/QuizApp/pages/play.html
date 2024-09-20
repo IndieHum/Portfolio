@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/play.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      rel="shortcut icon"
+      href="../image/icons8-quiz-96.png"
+      type="image/x-icon"
+    />
+    <title>Quiz App | Play</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader"></div>
+    <!-- question section of page -->
+    <div class="question-section">
+      <div class="signs">
+        <div>
+          <h2>Question No:</h2>
+          <span class="cube" id="q-number">1</span>
+        </div>
+        <div>
+          <h2>Score:</h2>
+          <span class="cube" id="s-number">0</span>
+        </div>
+      </div>
+      <div class="category-section">
+        <h2>Category:</h2>
+        <span class="cube" id="category"></span>
+      </div>
+      <div class="button-class-two question"></div>
+      <div class="answers-list">
+        <div class="button-class-one answer"></div>
+        <div class="button-class-one answer"></div>
+        <div class="button-class-one answer"></div>
+        <div class="button-class-one answer"></div>
+      </div>
+      <div>
+        <button id="finish">Finish</button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+    <script src="../js/play.js"></script>
+  </body>
+</html>

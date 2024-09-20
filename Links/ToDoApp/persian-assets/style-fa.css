@@ -1,0 +1,184 @@
+/*GENERAL STYLE*/
+
+:root {
+    --color-primary: #f9d72f;
+    --color-background: #e6e6e6;
+    --color-task: #f7f7f7;
+    --color-succuss: #36d39a;
+    --color-warning: #fbbe23;
+    --color-error: #f87171;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazirmatn-Medium.woff2") format("woff2");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "vazir", sans-serif;
+}
+
+button {
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* APP STYLE - ACTION SECTION */
+
+.App {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px 0 35px;
+    font-size: 3rem;
+}
+
+.Action-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: var(--color-background);
+    box-shadow: 3px 3px 3px black;
+    border-radius: 15px;
+}
+
+.Action-Inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Action-Inputs input {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.Action-Buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Delete-All-Button {
+    background-color: var(--color-error);
+}
+
+#Edit-Button {
+    display: none;
+}
+
+/* APP STYLE - MESSAGE SECTION */
+
+.Alert,
+.Alert-NotOk,
+.Alert-Ok {
+    position: fixed;
+    left: 75px;
+    top: 50px;
+    width: auto;
+    height: auto;
+    padding: 10px 35px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 3px black;
+}
+
+.Alert-Ok {
+    background-color: var(--color-succuss);
+}
+
+.Alert-NotOk {
+    background-color: var(--color-error);
+}
+
+/* APP STYLE - TABLE SECTION */
+
+.Task-Container,
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: var(--color-background);
+}
+
+thead th {
+    padding: 10px;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tbody td {
+    width: 25%;
+    background-color: var(--color-task);
+    padding: 5px 10px;
+    text-align: center;
+}
+
+tbody td button {
+    margin: 2px 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+tbody td button:nth-child(1) {
+    background-color: var(--color-warning);
+}
+
+tbody td button:nth-child(2) {
+    background-color: var(--color-succuss);
+    width: 50px;
+}
+
+tbody td button:nth-child(3) {
+    background-color: var(--color-error);
+}
+
+/* LANGUAGE */
+
+.language {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+}
+
+#language-select {
+    font-family: "vazir";
+    padding: 5px 10px;
+}

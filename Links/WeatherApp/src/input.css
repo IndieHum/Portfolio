@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-position {
+    position: absolute;
+    top: 23%;
+    left: calc(50% - 192px);
+}
+
+@media (max-width: 425px) {
+    .main-position {
+        left: calc(50% - 170px);
+    }
+}
+
+.modal[open] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 2rem;
+    position: fixed;
+    top: calc(50% - 43px);
+    margin: 0 auto;
+}

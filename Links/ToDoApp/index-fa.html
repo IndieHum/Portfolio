@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./persian-assets/style-fa.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <title>فهرست کارهای من</title>
+        <style>
+            th:first-child {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 0;
+            }
+            th:last-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="language">
+            <select id="language-select">
+                <option value="persian">پارسی</option>
+                <option value="english">English</option>
+            </select>
+        </section>
+        <div id="Message-Section"></div>
+        <div class="App">
+            <h1>فهرست کارهای من</h1>
+            <div class="Action-Container">
+                <div class="Action-Inputs">
+                    <input
+                        type="text"
+                        placeholder="نام را اینجا بنویس..."
+                        id="Text-Input"
+                    />
+                    <input type="date" id="Date-Input" />
+                    <button id="Confirm-Button">افزودن</button>
+                    <button id="Edit-Button">ویرایش</button>
+                </div>
+                <div class="Action-Buttons">
+                    <div>
+                        <button class="Filter-Button" data-filter="all">
+                            همه
+                        </button>
+                        <button class="Filter-Button" data-filter="completed">
+                            پایان‌یافته‌ها
+                        </button>
+                        <button class="Filter-Button" data-filter="pending">
+                            درحال‌انجام
+                        </button>
+                    </div>
+                    <div>
+                        <button id="Delete-All-Button">حذف همه</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Task-Container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>سرنویس</th>
+                            <th>تاریخ</th>
+                            <th>چگونگی</th>
+                            <th>به کار فرمودن</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="./persian-assets/app-fa.js"></script>
+    </body>
+</html>

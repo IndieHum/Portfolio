@@ -1,0 +1,35 @@
+.user-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.user-ctn span {
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.user-ctn p {
+  font-size: 1.5rem;
+}
+
+a {
+  border: 3px solid #3e3e3e;
+  color: #3e3e3e;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 50px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #3e3e3e;
+  border: 3px solid #eeeeea;
+  color: white;
+}

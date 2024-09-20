@@ -14,37 +14,37 @@
     {
         "link": "./Links/ToDoApp/index.html",
         "image": "./Img/projects/proj-13.png",
-        "id": "4",
+        "id": "3",
         "title": "ToDoApp Project"
     },
     {
         "link": "./Links/RockPaperScissor/index.html",
         "image": "./Img/projects/proj-8.png",
-        "id": "9",
+        "id": "4",
         "title": "RockPaperScissor Game"
     },
     {
         "link": "./Links/QuizApp/index.html",
         "image": "./Img/projects/proj-7.png",
-        "id": "10",
+        "id": "5",
         "title": "QuizApp Game"
     },
     {
-        "link": "./Links/WeatherApp/Build/index.html",
+        "link": "./Links/WeatherApp/build/index.html",
         "image": "./Img/projects/proj-6.png",
-        "id": "11",
+        "id": "6",
         "title": "Weather Project"
     },
     {
         "link": "./Links/FakeStoreOOP/index.html",
         "image": "./Img/projects/proj-5.png",
-        "id": "12",
+        "id": "7",
         "title": "Login & Logout Project - OOP Project"
     },
     {
         "link": "./Links/OHstudio/Index.html",
         "image": "./Img/projects/proj-3.png",
-        "id": "14",
+        "id": "8",
         "title": "OHStusio Clone Site"
     }
 ]

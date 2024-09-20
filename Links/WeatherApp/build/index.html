@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="img/icons8-partly-cloudy-day-96.png"
+            type="image/x-icon"
+        />
+        <title>Weather App</title>
+    </head>
+    <body
+        class="bg-slate-400 max-w-4xl flex flex-col justify-center mx-auto max-[768px]:max-w-xl max-[425px]:max-w-xs"
+    >
+        <dialog class="modal backdrop:bg-slate-500 backdrop:opacity-50">
+            <button
+                id="dialog-button"
+                class="bg-green-500 rounded-lg p-1 max-[425px]:w-6/12 max-[425px]:text-xl"
+            >
+                &#10005;
+            </button>
+            <p></p>
+        </dialog>
+
+        <header
+            class="bg-lime-500 rounded-b-3xl flex justify-center items-center p-8 pb-28 shadow-xl max-[425px]:p-4 max-[425px]:pb-20"
+        >
+            <img
+                src="./img/location.png"
+                alt="location png"
+                id="location-button"
+                class="hover:scale-110 transition-all cursor-pointer max-[425px]:w-14"
+            />
+            <input
+                type="text"
+                name="search"
+                id="search-input"
+                class="p-4 text-2xl w-6/12 focus:outline-none text-center rounded-s-xl shadow-xl max-[425px]:w-7/12 max-[425px]:text-xl"
+            />
+            <button
+                id="search"
+                class="bg-lime-700 p-4 text-white rounded-e-xl text-2xl hover:bg-lime-600 transition-all max-[425px]:text-xl"
+            >
+                Search
+            </button>
+        </header>
+
+        <main class="main-position shadow-xl max-[425px]:top-28">
+            <div
+                id="weather"
+                class="bg-white w-96 h-44 rounded-xl flex flex-col justify-center items-center p-4 gap-4 text-xl max-[425px]:w-[340px] max-[425px]:h-auto max-[425px]:text-lg"
+            >
+                <span
+                    id="loader"
+                    class="w-36 h-36 border-8 border-blue-900 border-x-transparent rounded-full animate-spin"
+                ></span>
+            </div>
+        </main>
+
+        <footer>
+            <div
+                id="forecast"
+                class="flex mt-44 w-full justify-between max-[425px]:flex-wrap"
+            ></div>
+        </footer>
+        <script type="module" src="./js/app.js"></script>
+    </body>
+</html>

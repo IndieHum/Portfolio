@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <title>My ToDo App</title>
+    </head>
+    <body>
+        <section class="language">
+            <select id="language-select">
+                <option value="english">English</option>
+                <option value="persian">پارسی</option>
+            </select>
+        </section>
+        <div id="Message-Section"></div>
+        <div class="App">
+            <h1>To Do App Project</h1>
+            <div class="Action-Container">
+                <div class="Action-Inputs">
+                    <input
+                        type="text"
+                        placeholder="Your task name..."
+                        id="Text-Input"
+                    />
+                    <input type="date" id="Date-Input" />
+                    <button id="Confirm-Button">Add</button>
+                    <button id="Edit-Button">Edit</button>
+                </div>
+                <div class="Action-Buttons">
+                    <div>
+                        <button class="Filter-Button" data-filter="all">
+                            All
+                        </button>
+                        <button class="Filter-Button" data-filter="completed">
+                            Completed
+                        </button>
+                        <button class="Filter-Button" data-filter="pending">
+                            Pending
+                        </button>
+                    </div>
+                    <div>
+                        <button id="Delete-All-Button">Delete All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Task-Container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task Name</th>
+                            <th>Task Date</th>
+                            <th>Task Status</th>
+                            <th>Task Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
