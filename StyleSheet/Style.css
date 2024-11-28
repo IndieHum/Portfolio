@@ -127,6 +127,9 @@ main:has(option[value="oldest"]:checked) .link-contain {
     .sample {
         width: 100%;
     }
+    header .tech-contain img {
+        width: 75px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -143,5 +146,11 @@ main:has(option[value="oldest"]:checked) .link-contain {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    header .tech-contain img {
+        width: 55px;
     }
 }

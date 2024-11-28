@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //fetching my samples
 async function FetchData() {
     const Data = await FetchSamples();
-    console.log(Data);
     RenderData(Data, Container);
 }
 
