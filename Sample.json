@@ -46,5 +46,11 @@
         "image": "./Img/projects/proj-3.png",
         "id": "8",
         "title": "OHStusio Clone Site"
+    },
+    {
+        "link": "https://indiehum.github.io/zaal",
+        "image": "./Img/projects/proj-15.png",
+        "id": "9",
+        "title": "Zaal Searcer"
     }
 ]
