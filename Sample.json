@@ -1,11 +1,5 @@
 [
     {
-        "link": "./Links/Abstract/index.html",
-        "image": "./Img/projects/proj-2.png",
-        "id": "1",
-        "title": "Abstract"
-    },
-    {
         "link": "./Links/zarinpal/index.html",
         "image": "./Img/projects/proj-1.png",
         "id": "2",
@@ -51,6 +45,6 @@
         "link": "https://indiehum.github.io/zaal",
         "image": "./Img/projects/proj-15.png",
         "id": "9",
-        "title": "Zaal Searcer"
+        "title": "Zaal Searcher"
     }
 ]
