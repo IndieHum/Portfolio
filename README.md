@@ -1,1 +1,1 @@
-This file contains my portfolio website codes, see my handwriting in programming.
+این مخزن نمونه‌کارهای من است، جایی برای دیدن دست خط برنامه‌نویسی من.
