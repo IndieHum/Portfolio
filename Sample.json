@@ -1,50 +1,14 @@
 [
     {
-        "link": "./Links/zarinpal/index.html",
-        "image": "./Img/projects/proj-1.png",
-        "id": "2",
-        "title": "Zarinpal"
+        "link": "https://indiehum.github.io/zaal",
+        "image": "./Img/projects/proj-15.png",
+        "id": "1",
+        "title": "زال"
     },
     {
         "link": "./Links/ToDoApp/index.html",
         "image": "./Img/projects/proj-13.png",
-        "id": "3",
+        "id": "2",
         "title": "ToDoApp Project"
-    },
-    {
-        "link": "./Links/RockPaperScissor/index.html",
-        "image": "./Img/projects/proj-8.png",
-        "id": "4",
-        "title": "RockPaperScissor Game"
-    },
-    {
-        "link": "./Links/QuizApp/index.html",
-        "image": "./Img/projects/proj-7.png",
-        "id": "5",
-        "title": "QuizApp Game"
-    },
-    {
-        "link": "./Links/WeatherApp/build/index.html",
-        "image": "./Img/projects/proj-6.png",
-        "id": "6",
-        "title": "Weather Project"
-    },
-    {
-        "link": "./Links/FakeStoreOOP/index.html",
-        "image": "./Img/projects/proj-5.png",
-        "id": "7",
-        "title": "Login & Logout Project - OOP Project"
-    },
-    {
-        "link": "./Links/OHstudio/Index.html",
-        "image": "./Img/projects/proj-3.png",
-        "id": "8",
-        "title": "OHStusio Clone Site"
-    },
-    {
-        "link": "https://indiehum.github.io/zaal",
-        "image": "./Img/projects/proj-15.png",
-        "id": "9",
-        "title": "Zaal Searcher"
     }
 ]
