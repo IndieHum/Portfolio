@@ -4,11 +4,5 @@
         "image": "./Img/projects/proj-15.png",
         "id": "1",
         "title": "زال"
-    },
-    {
-        "link": "./Links/ToDoApp/index.html",
-        "image": "./Img/projects/proj-13.png",
-        "id": "2",
-        "title": "ToDoApp Project"
     }
 ]
