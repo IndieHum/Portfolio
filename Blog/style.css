@@ -1,0 +1,156 @@
+/* GENERAL */
+
+:root {
+    --the-green: rgb(0, 158, 0);
+    --the-blue: #4754b0;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("../Font/Vazirmatn-Black.woff2") format("woff");
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "vazir";
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgb(26, 26, 26);
+}
+
+header,
+main,
+footer {
+    margin-bottom: 75px;
+}
+
+p {
+    color: var(--the-green);
+    font-size: 1.5rem;
+}
+
+span {
+  color: #4754b0;
+  font-size:1.1rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BODY => HEADER */
+
+.tech-contain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.tech-contain section:first-child {
+  display: inherit;
+  align-items: center;
+  gap: 10px;
+}
+
+header .tech-contain img {
+    width: 100px;
+}
+
+/* BODY => MAIN */
+
+main section:has(select) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+  color: #3e8a64;
+  font-size: 1.75rem;
+}
+
+/* BODY => FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a,
+footer span {
+    font-size: 1.15rem;
+    color: var(--the-green);
+    transition: all 0.2s ease-in-out;
+}
+
+footer > div > span {
+    margin: 0 10px;
+}
+
+footer > span {
+    word-spacing: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+/* FILTER PROJECT */
+
+main:has(option[value="newest"]:checked) .link-contain {
+    flex-wrap: wrap-reverse;
+}
+
+main:has(option[value="oldest"]:checked) .link-contain {
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .sample {
+        width: 100%;
+    }
+    header .tech-contain img {
+        width: 75px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 15px;
+    }
+    p {
+        font-size: medium;
+    }
+    header .tech-contain img {
+        width: 75px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    header .tech-contain img {
+        width: 55px;
+    }
+}
